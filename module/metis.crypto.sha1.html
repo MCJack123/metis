@@ -1,0 +1,9 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>metis.crypto.sha1</title><link rel="stylesheet" href="../styles.css" type="text/css" /></head><body><div id="container"><div id="main"><nav><h1>metis</h1><h2>Modules</h2><ul><li><a href="metis.argparse.html">metis.argparse</a></li><li><strong>metis.crypto.sha1</strong></li><li><a href="metis.timer.html">metis.timer</a></li></ul></nav><section id="content"><h1><code>metis.crypto.sha1</code></h1><p>Calculate the SHA1 hash for some text.</p>
+<p>SHA1 has been <a href='https://shattered.io/'>broken</a> for several years now, and so should not be treated as
+secure. However, it is often a useful (and efficient) way to compute a checksum
+of a value.</p>
+<h3>Usage</h3><ul><li><p>Hash the string &quot;Hello, world!&quot;</p>
+<p> local sha1 = require &quot;metis.crypto.sha1&quot;
+ print(sha1(&quot;Hello, world!&quot;))
+ -- 943a702d06f34599aee1f8da8ef9f7296031d699</p>
+</li></ul><h3>Parameters</h3><ol class="parameter-list"><li><span class="parameter">msg</span> <span class="type"><a href="https://www.lua.org/manual/5.1/manual.html#5.4" class="reference reference-code">string</a></span> The message to hash.</li></ol><h3>Returns</h3><ol class="return-list"><li><span class="type"><a href="https://www.lua.org/manual/5.1/manual.html#5.4" class="reference reference-code">string</a></span> The hashed value.</li></ol></section></div><footer>Last updated on 2020-07-26</footer></div></body></html>
